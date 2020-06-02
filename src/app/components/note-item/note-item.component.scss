@@ -1,0 +1,29 @@
+.note-container {
+  border: 1px solid gray;
+  position: relative;
+  height: 150px;
+  width: 200px;
+  margin: 20px;
+  padding: 7px;
+  box-shadow: 1px 1px 1px 1px;
+
+  .note-author {
+    position: absolute;
+    background: white;
+    height: 20px;
+    top: -10px;
+    left: 7px;
+  }
+  .note-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+}
+  .note-date {
+    position: absolute;
+    bottom: 0;
+    font-size: 11px;
+  }
+}
